@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">CompassNav</string>
+  <string name="change_location">Change Location</string>
+  <string name="latitude">Latitude</string>
+  <string name="longitude">Longitude</string>
+  <string name="navigating_to">Navigating to:\nLatitude: %1$f\nLongitude: %2$f</string>
+  <string name="no_services_error">Location Services need to be enabled to start navigating</string>
+</resources>
