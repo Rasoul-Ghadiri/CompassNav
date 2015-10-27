@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import com.michaldrabik.compassnav.R;
+import com.michaldrabik.compassnav.Utils;
 
 public class LocationDialogView extends LinearLayout {
 
@@ -41,22 +42,10 @@ public class LocationDialogView extends LinearLayout {
   }
 
   private double clampLatitude(double latitude) {
-    if (latitude < MIN_LATITUDE) {
-      return MIN_LATITUDE;
-    }
-    if (latitude > MAX_LATITUDE) {
-      return MAX_LATITUDE;
-    }
-    return latitude;
+    return Utils.clamp(latitude, MIN_LATITUDE, MAX_LATITUDE);
   }
 
   private double clampLongitude(double longitude) {
-    if (longitude < MIN_LONGITUDE) {
-      return MIN_LONGITUDE;
-    }
-    if (longitude > MAX_LONGITUDE) {
-      return MAX_LONGITUDE;
-    }
-    return longitude;
+    return Utils.clamp(longitude, MIN_LONGITUDE, MAX_LONGITUDE);
   }
 }
