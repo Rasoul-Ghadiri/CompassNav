@@ -24,7 +24,7 @@ public class Utils {
     if (list.isEmpty()) {
       return 0;
     }
-    Float sum = 0f;
+    float sum = 0f;
     for (Float f : list) {
       sum += f;
     }
