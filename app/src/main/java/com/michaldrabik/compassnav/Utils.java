@@ -30,4 +30,15 @@ public class Utils {
     }
     return sum / (float) list.size();
   }
+
+  /**
+   * Clamps given float value.
+   * @param value input.
+   * @param min minimal value.
+   * @param max maximal value.
+   * @return clamped value.
+   */
+  public static double clamp(double value, double min, double max) {
+    return Math.max(min, Math.min(max, value));
+  }
 }
